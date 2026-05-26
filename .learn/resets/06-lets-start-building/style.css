@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Caveat', cursive;
+}
+
+.outer-container {
+    width: 700px;
+    padding: 10px;
+}
+
+.main-card {
+    background-color: white;
+    padding: 35px 40px;
+}
+
+/* --- TOP SECTION: título + logo --- */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.top-section h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.top-section img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* --- MIDDLE SECTION: texto + formulario --- */
+.middle-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 35px;
+    align-items: flex-start;
+}
+
+.message-area {
+    flex: 1;
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.message-area p {
+    margin-bottom: 20px;
+}
+
+.form-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-area input,
+.form-area textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: #888;
+    background: transparent;
+    padding: 6px 0;
+    resize: none;
+}
+
+.form-area textarea {
+    height: 80px;
+}
+
+/* --- BOTTOM SECTION: botón --- */
+.bottom-section {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.bottom-section button {
+    padding: 8px 28px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    background-color: #d0cdc7;
+    border: 2px outset #b0ada7;
+    cursor: pointer;
+    color: black;
+}
+
+.bottom-section button:hover {
+    background-color: #bbb;
+}
