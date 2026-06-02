@@ -1,110 +1,70 @@
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
 
 body {
 	background: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
 	font-family: "Caveat", cursive;
 }
 
 .postcard {
-	width: 700px;
-	padding: 10px;
+	background: white;
+	width: 600px;
+	margin: 100px auto;
+	padding: 20px;
 }
 
-.main-card {
-	background-color: white;
-	padding: 35px 40px;
-}
-
-/* --- TOP SECTION: título + logo --- */
-.top-section {
+.postcard-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 35px;
 }
 
-.top-section h1 {
-	font-family: "Caveat", cursive;
-	font-size: 3rem;
-	font-weight: 700;
-	color: black;
+.postcard-header h1 {
+	font-size: 45px;
+	margin: 0;
 }
 
-.top-section img {
-	width: 90px;
-	height: 90px;
-	object-fit: contain;
+.postcard-header img {
+	width: 70px;
+	height: 70px;
 }
 
-/* --- MIDDLE SECTION: texto + formulario --- */
-.middle-section {
+.postcard-body {
 	display: flex;
-	gap: 40px;
-	margin-bottom: 35px;
-	align-items: flex-start;
+	margin-top: 20px;
+	gap: 20px;
 }
 
-.message-area {
-	flex: 1;
-	font-family: "Caveat", cursive;
-	font-size: 1.4rem;
-	line-height: 1.6;
-	color: black;
+.body-left,
+.body-right {
+	width: 50%;
 }
 
-.message-area p {
-	margin-bottom: 20px;
+.body-left p {
+	font-size: 24px;
+	margin-top: 0;
 }
 
-.form-area {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-}
-
-.form-area input,
-.form-area textarea {
+.body-right input {
+	display: block;
 	width: 100%;
 	border: none;
-	border-bottom: 1px solid #aaa;
-	outline: none;
+	border-bottom: 1px solid gray;
+	margin-bottom: 15px;
+	font-size: 22px;
 	font-family: "Caveat", cursive;
-	font-size: 1.2rem;
-	color: #888;
-	background: transparent;
-	padding: 6px 0;
-	resize: none;
 }
 
-.form-area textarea {
-	height: 80px;
-}
-
-/* --- BOTTOM SECTION: botón --- */
-.bottom-section {
+.postcard-footer {
 	text-align: center;
-	padding-top: 5px;
+	margin-top: 20px;
 }
 
-.bottom-section button {
-	padding: 8px 28px;
+.postcard-footer button {
 	font-family: "Caveat", cursive;
-	font-size: 1.1rem;
-	background-color: #d0cdc7;
-	border: 2px outset #b0ada7;
-	cursor: pointer;
-	color: black;
-}
-
-.bottom-section button:hover {
-	background-color: #bbb;
+	font-size: 22px;
+	padding: 5px 15px;
+	background: lightgray;
+	border: 1px solid gray;
 }
